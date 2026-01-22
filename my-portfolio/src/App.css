@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  text-align: center;
+  padding: 2.5rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #00e6ff;
+  letter-spacing: 1px;
+}
+
+header p {
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00e6ff;
+  transform: scale(1.1);
+}
+
+main {
+  padding: 2rem 8%;
+}
+
+section {
+  margin-bottom: 3.5rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.45);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #00e6ff;
+  padding-left: 10px;
+  color: #00e6ff;
+}
+
+section p,
+section ul {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+section ul {
+  list-style: square;
+  margin-left: 1.5rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: rgba(0, 230, 255, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 230, 255, 0.3);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  color: #00e6ff;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.card div a {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #fff;
+  background: #00e6ff;
+  transition: 0.3s;
+}
+
+.card div a:hover {
+  background: #00b8d9;
+  transform: scale(1.1);
+}
+
+#contact a {
+  color: #00e6ff;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+.signature {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #bbb;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+footer p {
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  main {
+    padding: 1rem 5%;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+  section {
+    padding: 1.5rem;
+  }
+}
