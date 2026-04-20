@@ -178,6 +178,7 @@ footer p {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -192,12 +193,15 @@ section {
   header h1 {
     font-size: 2rem;
   }
+
   main {
     padding: 1rem 5%;
   }
+
   nav {
     flex-wrap: wrap;
   }
+
   section {
     padding: 1.5rem;
   }
